@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    connection
+</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="index.php?route=connect" method="post">
+                <input type="text" name="pseudo" placeholder="pseudo">
+                <input type="password" name="password" placeholder="password">
+                <input type="submit" value="Enter">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+<!--  lib  -->
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!--  scripts  -->
+<script src="./assets/js/script.js"></script>
+</html>
